@@ -1,0 +1,97 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"20 C:\Users\ssc002\Documents\MAU_BAO_CAO\KTVXL\EXAM\SRC_CODE\BAI_1.X\BAI_1.c
+[v _khaiBaoPort khaiBaoPort `(v  1 e 1 0 ]
+"40
+[v _demThuan demThuan `(v  1 e 1 0 ]
+"57
+[v _main main `(v  1 e 1 0 ]
+"64
+[v _myIsr myIsr `II(v  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"352 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2346
+[v _WPUB WPUB `VEuc  1 e 1 @149 ]
+"3387
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3896
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3923
+[v _INTE INTE `VEb  1 e 0 @92 ]
+"3926
+[v _INTEDG INTEDG `VEb  1 e 0 @1038 ]
+"3929
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"4664
+[v _nRBPU nRBPU `VEb  1 e 0 @1039 ]
+"57 C:\Users\ssc002\Documents\MAU_BAO_CAO\KTVXL\EXAM\SRC_CODE\BAI_1.X\BAI_1.c
+[v _main main `(v  1 e 1 0 ]
+{
+"62
+} 0
+"20
+[v _khaiBaoPort khaiBaoPort `(v  1 e 1 0 ]
+{
+"30
+} 0
+"40
+[v _demThuan demThuan `(v  1 e 1 0 ]
+{
+"41
+[v demThuan@tong tong `ui  1 a 2 7 ]
+"42
+[v demThuan@hold hold `ui  1 a 2 5 ]
+[v demThuan@donvi donvi `ui  1 a 2 3 ]
+[v demThuan@chuc chuc `ui  1 a 2 1 ]
+"40
+[v demThuan@num num `ui  1 p 2 10 ]
+"55
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 4 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 7 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 9 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 4 ]
+"30
+} 0
+"64 C:\Users\ssc002\Documents\MAU_BAO_CAO\KTVXL\EXAM\SRC_CODE\BAI_1.X\BAI_1.c
+[v _myIsr myIsr `II(v  1 e 1 0 ]
+{
+"66
+} 0
