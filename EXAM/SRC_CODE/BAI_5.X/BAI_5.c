@@ -18,14 +18,22 @@ void main(void) {
     ANSEL = 0x01;
     ANSELH = 0;
     TRISA0 = 1;
-    TRISB = 0;
+    TRISB = TRISC = TRISD = 0;
     PORTB = 0;
-    ADCON1 = 0b10000000;
-    ADCON0 = 0b10000001;
+    PORTC = 0;
+    PORTD = 0;
+    ADCON1 = 0x80;
+    ADCON0 = 0x81;
+    unsigned int storage = 0;
+	const int led[10]={0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x90};
     while(1) {
         __delay_us(6);
         GO = 1;
         while(GO);
-        PORTB = ADRESL;
+        storage = ADRESL;
+		unsigned int TR = storage / 100, CH = (storage % 100) / 10, DV = (storage % 100) % 10;
+		PORTC = led[TR];
+		PORTD = led[CH];
+		PORTB = led[DV];
     }
 }
