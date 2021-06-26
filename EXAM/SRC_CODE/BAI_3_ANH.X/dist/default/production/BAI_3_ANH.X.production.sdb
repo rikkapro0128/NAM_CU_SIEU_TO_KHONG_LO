@@ -1,0 +1,110 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"17 E:\NAM_CU_TO\EXAM\SRC_CODE\BAI_3_ANH.X\BAI_3.c
+[v _numPortC numPortC `(v  1 e 1 0 ]
+"22
+[v _numPortD numPortD `(v  1 e 1 0 ]
+"27
+[v _hienThiLedTong hienThiLedTong `(v  1 e 1 0 ]
+"34
+[v _main main `(v  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"32 E:\NAM_CU_TO\EXAM\SRC_CODE\BAI_3_ANH.X\BAI_3.c
+[v _state state `ui  1 e 2 0 ]
+"59 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"290
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1540
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"3387
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"3896
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"4040
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"4058
+[v _PSA PSA `VEb  1 e 0 @1035 ]
+"4316
+[v _T0CS T0CS `VEb  1 e 0 @1037 ]
+"4325
+[v _T0SE T0SE `VEb  1 e 0 @1036 ]
+"4358
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"4361
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"4412
+[v _TRISA4 TRISA4 `VEb  1 e 0 @1068 ]
+"34 E:\NAM_CU_TO\EXAM\SRC_CODE\BAI_3_ANH.X\BAI_3.c
+[v _main main `(v  1 e 1 0 ]
+{
+"55
+} 0
+"27
+[v _hienThiLedTong hienThiLedTong `(v  1 e 1 0 ]
+{
+[v hienThiLedTong@num num `ui  1 p 2 7 ]
+"30
+} 0
+"22
+[v _numPortD numPortD `(v  1 e 1 0 ]
+{
+"23
+[v numPortD@DV DV `ui  1 a 2 5 ]
+[v numPortD@CH CH `ui  1 a 2 3 ]
+"22
+[v numPortD@num num `ui  1 p 2 0 ]
+"25
+} 0
+"17
+[v _numPortC numPortC `(v  1 e 1 0 ]
+{
+"18
+[v numPortC@TR TR `ui  1 a 2 5 ]
+[v numPortC@NG NG `ui  1 a 2 3 ]
+"17
+[v numPortC@num num `ui  1 p 2 0 ]
+"20
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 8 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 10 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 5 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 0 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
+"30
+} 0
