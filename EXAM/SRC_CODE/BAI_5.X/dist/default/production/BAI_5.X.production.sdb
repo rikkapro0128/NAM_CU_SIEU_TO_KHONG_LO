@@ -3,10 +3,12 @@
 [d edition pro ]
 [d chip 16F887 ]
 [d frameptr 0 ]
-"17 C:\Users\ssc002\Documents\MAU_BAO_CAO\KTVXL\EXAM\SRC_CODE\BAI_5.X\BAI_5.c
-[v _cauHinh cauHinh `(v  1 e 1 0 ]
-"25
+"17 E:\NAM_CU_TO\EXAM\SRC_CODE\BAI_5.X\BAI_5.c
 [v _main main `(v  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\Umul8_16.c
@@ -17,10 +19,18 @@
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
 "228 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"290
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
 "1245
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @31 ]
 "1478
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1540
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
 "2970
 [v _ADRESL ADRESL `VEuc  1 e 1 @158 ]
 "2977
@@ -33,13 +43,38 @@
 [v _GO GO `VEb  1 e 0 @249 ]
 "4400
 [v _TRISA0 TRISA0 `VEb  1 e 0 @1064 ]
-"25 C:\Users\ssc002\Documents\MAU_BAO_CAO\KTVXL\EXAM\SRC_CODE\BAI_5.X\BAI_5.c
+"17 E:\NAM_CU_TO\EXAM\SRC_CODE\BAI_5.X\BAI_5.c
 [v _main main `(v  1 e 1 0 ]
 {
-"35
+"34
+[v main@DV DV `ui  1 a 2 6 ]
+[v main@CH CH `ui  1 a 2 4 ]
+[v main@TR TR `ui  1 a 2 2 ]
+"27
+[v main@storage storage `ui  1 a 2 10 ]
+"28
+[v main@led led `DC[10]i  1 s 20 led ]
+"39
 } 0
-"17
-[v _cauHinh cauHinh `(v  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
 {
-"23
+"10
+[v ___lwmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 11 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 6 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 8 ]
+"30
 } 0

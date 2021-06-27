@@ -1,4 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
 "3387 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3387: extern volatile unsigned char ANSEL __attribute__((address(0x188)));
 [v _ANSEL `Vuc ~T0 @X0 0 e@392 ]
@@ -11,10 +12,21 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1478
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1478: extern volatile unsigned char TRISB __attribute__((address(0x086)));
 [v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"1540
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1540: extern volatile unsigned char TRISC __attribute__((address(0x087)));
+[v _TRISC `Vuc ~T0 @X0 0 e@135 ]
+"1602
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 1602: extern volatile unsigned char TRISD __attribute__((address(0x088)));
+[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
 "228
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 228: extern volatile unsigned char PORTB __attribute__((address(0x006)));
 [v _PORTB `Vuc ~T0 @X0 0 e@6 ]
-[p mainexit ]
+"290
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 290: extern volatile unsigned char PORTC __attribute__((address(0x007)));
+[v _PORTC `Vuc ~T0 @X0 0 e@7 ]
+"352
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 352: extern volatile unsigned char PORTD __attribute__((address(0x008)));
+[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
 "2977
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 2977: extern volatile unsigned char ADCON1 __attribute__((address(0x09F)));
 [v _ADCON1 `Vuc ~T0 @X0 0 e@159 ]
@@ -290,11 +302,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3546
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h: 3546: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
+[v $root$_main `(v ~T0 @X0 0 e ]
 "17 BAI_5.c
-[; ;BAI_5.c: 17: void cauHinh() {
-[v _cauHinh `(v ~T0 @X0 1 ef ]
+[; ;BAI_5.c: 17: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
 {
-[e :U _cauHinh ]
+[e :U _main ]
 [f ]
 "18
 [; ;BAI_5.c: 18:     ANSEL = 0x01;
@@ -306,34 +319,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;BAI_5.c: 20:     TRISA0 = 1;
 [e = _TRISA0 -> -> 1 `i `b ]
 "21
-[; ;BAI_5.c: 21:     TRISB = 0;
-[e = _TRISB -> -> 0 `i `uc ]
+[; ;BAI_5.c: 21:     TRISB = TRISC = TRISD = 0;
+[e = _TRISB = _TRISC = _TRISD -> -> 0 `i `uc ]
 "22
 [; ;BAI_5.c: 22:     PORTB = 0;
 [e = _PORTB -> -> 0 `i `uc ]
 "23
-[; ;BAI_5.c: 23: }
-[e :UE 138 ]
-}
-[v $root$_main `(v ~T0 @X0 0 e ]
+[; ;BAI_5.c: 23:     PORTC = 0;
+[e = _PORTC -> -> 0 `i `uc ]
+"24
+[; ;BAI_5.c: 24:     PORTD = 0;
+[e = _PORTD -> -> 0 `i `uc ]
 "25
-[; ;BAI_5.c: 25: void main(void) {
-[v _main `(v ~T0 @X0 1 ef ]
-{
-[e :U _main ]
-[f ]
-"26
-[; ;BAI_5.c: 26:     cauHinh();
-[e ( _cauHinh ..  ]
-"27
-[; ;BAI_5.c: 27:     ADCON1 = 0b10000000;
+[; ;BAI_5.c: 25:     ADCON1 = 0x80;
 [e = _ADCON1 -> -> 128 `i `uc ]
-"28
-[; ;BAI_5.c: 28:     ADCON0 = 0b10000001;
+"26
+[; ;BAI_5.c: 26:     ADCON0 = 0x81;
 [e = _ADCON0 -> -> 129 `i `uc ]
+"27
+[; ;BAI_5.c: 27:     unsigned int storage = 0;
+[v _storage `ui ~T0 @X0 1 a ]
+[e = _storage -> -> 0 `i `ui ]
+"28
+[; ;BAI_5.c: 28:  const int led[10]={0xC0,0xF9,0xA4,0xB0,0x99,0x92,0x82,0xF8,0x80,0x90};
+[v F1266 `Ci ~T0 @X0 -> 10 `i s led ]
+[i F1266
+:U ..
+-> 192 `i
+-> 249 `i
+-> 164 `i
+-> 176 `i
+-> 153 `i
+-> 146 `i
+-> 130 `i
+-> 248 `i
+-> 128 `i
+-> 144 `i
+..
+]
 "29
 [; ;BAI_5.c: 29:     while(1) {
-[e :U 141 ]
+[e :U 140 ]
 {
 "30
 [; ;BAI_5.c: 30:         _delay((unsigned long)((6)*(4000000/4000000.0)));
@@ -343,21 +369,38 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _GO -> -> 1 `i `b ]
 "32
 [; ;BAI_5.c: 32:         while(GO);
-[e $U 143  ]
-[e :U 144 ]
+[e $U 142  ]
 [e :U 143 ]
-[e $ _GO 144  ]
-[e :U 145 ]
-"33
-[; ;BAI_5.c: 33:         PORTB = ADRESL;
-[e = _PORTB _ADRESL ]
-"34
-[; ;BAI_5.c: 34:     }
-}
-[e :U 140 ]
-[e $U 141  ]
 [e :U 142 ]
+[e $ _GO 143  ]
+[e :U 144 ]
+"33
+[; ;BAI_5.c: 33:         storage = ADRESL;
+[e = _storage -> _ADRESL `ui ]
+"34
+[; ;BAI_5.c: 34:   unsigned int TR = storage / 100, CH = (storage % 100) / 10, DV = (storage % 100) % 10;
+[v _TR `ui ~T0 @X0 1 a ]
+[e = _TR / _storage -> -> 100 `i `ui ]
+[v _CH `ui ~T0 @X0 1 a ]
+[e = _CH / % _storage -> -> 100 `i `ui -> -> 10 `i `ui ]
+[v _DV `ui ~T0 @X0 1 a ]
+[e = _DV % % _storage -> -> 100 `i `ui -> -> 10 `i `ui ]
 "35
-[; ;BAI_5.c: 35: }
-[e :UE 139 ]
+[; ;BAI_5.c: 35:   PORTC = led[TR];
+[e = _PORTC -> *U + &U F1266 * -> _TR `ux -> -> # *U &U F1266 `ui `ux `uc ]
+"36
+[; ;BAI_5.c: 36:   PORTD = led[CH];
+[e = _PORTD -> *U + &U F1266 * -> _CH `ux -> -> # *U &U F1266 `ui `ux `uc ]
+"37
+[; ;BAI_5.c: 37:   PORTB = led[DV];
+[e = _PORTB -> *U + &U F1266 * -> _DV `ux -> -> # *U &U F1266 `ui `ux `uc ]
+"38
+[; ;BAI_5.c: 38:     }
+}
+[e :U 139 ]
+[e $U 140  ]
+[e :U 141 ]
+"39
+[; ;BAI_5.c: 39: }
+[e :UE 138 ]
 }
